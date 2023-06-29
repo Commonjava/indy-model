@@ -1,6 +1,6 @@
 <!--
 
-    Copyright (C) 2022 Red Hat, Inc. (https://github.com/Commonjava/indy-event-model)
+    Copyright (C) 2022-2023 Red Hat, Inc. (https://github.com/Commonjava/indy-model)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -24,12 +24,12 @@
   </parent>
   
   <groupId>org.commonjava.indy.service</groupId>
-  <artifactId>indy-event-model-parent</artifactId>
+  <artifactId>indy-model-parent</artifactId>
   <version>1.3-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>Indy :: Library :: Event Model :: Parent</name>
-  <inceptionYear>2022</inceptionYear>
+  <inceptionYear>2022-2023</inceptionYear>
 
   <scm>
     <connection>scm:git:https://github.com/CommonJava/indy-event-model</connection>
@@ -39,7 +39,11 @@
   </scm>
 
   <properties>
-    <projectEmail>https://github.com/Commonjava/indy-event-model</projectEmail>
+    <projectEmail>https://github.com/Commonjava/indy-model</projectEmail>
+    <atlas-version>1.1.1</atlas-version>
+    <logback-version>1.</logback-version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
   <dependencyManagement>
@@ -54,12 +58,84 @@
         <artifactId>indy-event-model-serializer</artifactId>
         <version>1.3-SNAPSHOT</version>
       </dependency>
+      <dependency>
+        <groupId>org.commonjava.indy.service</groupId>
+        <artifactId>indy-model-core-java</artifactId>
+        <version>1.2-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.atlas</groupId>
+        <artifactId>atlas-identities</artifactId>
+        <version>${atlas-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.atlas</groupId>
+        <artifactId>atlas-bindings-jackson-identities</artifactId>
+        <version>${atlas-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.atlas</groupId>
+        <artifactId>atlas-relationships-api</artifactId>
+        <version>${atlas-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.atservice</groupId>
+        <artifactId>atservice-annotation</artifactId>
+        <version>0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.atservice</groupId>
+        <artifactId>atservice-processor</artifactId>
+        <version>0.1</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>javax.annotation</groupId>
+        <artifactId>javax.annotation-api</artifactId>
+        <version>1.3.2</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.enterprise</groupId>
+        <artifactId>cdi-api</artifactId>
+        <version>2.0</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.11</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback.contrib</groupId>
+        <artifactId>logback-json-classic</artifactId>
+        <version>0.1.5</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback.contrib</groupId>
+        <artifactId>logback-jackson</artifactId>
+        <version>0.1.5</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <scope>test</scope>
+        <version>5.9.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-core</artifactId>
+        <version>2.2</version>
+        <scope>test</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
   <modules>
-    <module>model</module>
-    <module>serialize</module>
+    <module>core-java</module>
+    <module>event</module>
   </modules>
 
 </project>
