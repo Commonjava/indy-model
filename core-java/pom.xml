@@ -24,7 +24,7 @@
   </parent>
 
   <artifactId>indy-model-core-java</artifactId>
-  <name>Indy :: Object Models :: Core for Java</name>
+  <name>Indy :: Library :: Object Models :: Core for Java</name>
   <packaging>jar</packaging>
 
   <dependencies>
