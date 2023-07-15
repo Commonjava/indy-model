@@ -7,3 +7,6 @@ This lib is extracted from the old indy monolith code of "indy-model-core-java",
 
 ### Event Model
 This event model lib is created to hold all model classes for indy messaging interaction between services.
+
+### Folo Model
+This lib is extracted from the old indy monolith code of "indy-folo-model-java", which is commonly used by all the other services

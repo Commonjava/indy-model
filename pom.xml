@@ -61,7 +61,7 @@
       <dependency>
         <groupId>org.commonjava.indy.service</groupId>
         <artifactId>indy-model-core-java</artifactId>
-        <version>1.2-SNAPSHOT</version>
+        <version>1.3-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.commonjava.atlas</groupId>
@@ -93,6 +93,11 @@
         <groupId>javax.annotation</groupId>
         <artifactId>javax.annotation-api</artifactId>
         <version>1.3.2</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>1.15</version>
       </dependency>
       <dependency>
         <groupId>javax.enterprise</groupId>
@@ -133,9 +138,28 @@
     </dependencies>
   </dependencyManagement>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
   <modules>
     <module>core-java</module>
     <module>event</module>
+    <module>folo</module>
   </modules>
 
 </project>
