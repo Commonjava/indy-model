@@ -40,6 +40,8 @@ public class FileEvent extends IndyEvent implements Externalizable
 
     private FileEventType eventType;
 
+    private TransferOperation operation;
+
     private String requestId;
 
     private Integer eventVersion;
@@ -130,7 +132,11 @@ public class FileEvent extends IndyEvent implements Externalizable
 
     public void setStoreKey( String storeKey ) { this.storeKey = storeKey; }
 
-    public int compareTo( FileEvent o )
+    public TransferOperation getOperation() { return operation; }
+
+    public void setOperation(TransferOperation operation) { this.operation = operation; }
+
+    public int compareTo(FileEvent o )
     {
         return getTimestamp().compareTo( o.getTimestamp() );
     }
@@ -147,6 +153,7 @@ public class FileEvent extends IndyEvent implements Externalizable
         out.writeObject( targetLocation );
         out.writeObject( targetPath );
         out.writeObject( eventType );
+        out.writeObject( operation );
         out.writeObject( requestId );
         out.writeObject( eventVersion );
         out.writeObject( sourceLocation );
@@ -174,6 +181,7 @@ public class FileEvent extends IndyEvent implements Externalizable
         targetLocation = ( String )in.readObject();
         targetPath = ( String )in.readObject();
         eventType = ( FileEventType )in.readObject();
+        operation = ( TransferOperation )in.readObject();
         requestId = ( String )in.readObject();
         eventVersion = ( Integer )in.readObject();
         sourceLocation = ( String )in.readObject();
@@ -193,6 +201,7 @@ public class FileEvent extends IndyEvent implements Externalizable
                 ", targetLocation='" + targetLocation + '\'' +
                 ", targetPath='" + targetPath + '\'' +
                 ", eventType=" + eventType +
+                ", operation=" + operation +
                 ", sourceLocation='" + sourceLocation + '\'' +
                 ", storeKey='" + storeKey + '\'' +
                 ", timestamp=" + timestamp +
