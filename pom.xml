@@ -41,9 +41,11 @@
   <properties>
     <projectEmail>https://github.com/Commonjava/indy-model</projectEmail>
     <atlas-version>1.1.1</atlas-version>
-    <logback-version>1.</logback-version>
+    <logback-version>1.2.12</logback-version>
+    <jackson-version>2.15.2</jackson-version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+
   </properties>
 
   <dependencyManagement>
@@ -62,6 +64,21 @@
         <groupId>org.commonjava.indy.service</groupId>
         <artifactId>indy-model-core-java</artifactId>
         <version>1.4-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${jackson-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${jackson-version}</version>
       </dependency>
       <dependency>
         <groupId>org.commonjava.atlas</groupId>
@@ -159,7 +176,7 @@
   <modules>
     <module>core-java</module>
     <module>event</module>
-    <module>folo</module>
+    <module>addons</module>
   </modules>
 
 </project>
