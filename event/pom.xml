@@ -21,7 +21,7 @@
   <parent>
     <artifactId>indy-model-parent</artifactId>
     <groupId>org.commonjava.indy.service</groupId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.4</version>
   </parent>
 
   <artifactId>indy-event-model-parent</artifactId>
