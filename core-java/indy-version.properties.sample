@@ -1,0 +1,7 @@
+# This is a sample file, which is used to generate version info for project. If you want to provide version info,
+# please put a give the indy-version.properties with the following items into your project class path. e.g, src/main/resources
+version=@project.version@
+builder=@user.name@
+commit.id=@git.shortRevision@
+timestamp=@timestamp@
+api-version=@apiVersion@

@@ -11,3 +11,5 @@
 #
 #0.5 = OFF
 #[0.6,0.9] = 0.9
+
+# Please provide the deprecated-apis.properties into your project's classpath to get deprecated apis information
