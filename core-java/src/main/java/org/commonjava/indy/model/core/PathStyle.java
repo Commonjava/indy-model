@@ -21,5 +21,6 @@ package org.commonjava.indy.model.core;
 public enum PathStyle
 {
     plain,
+    base64url,
     hashed;
 }
