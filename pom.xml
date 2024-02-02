@@ -25,7 +25,7 @@
   
   <groupId>org.commonjava.indy.service</groupId>
   <artifactId>indy-model-parent</artifactId>
-  <version>1.5</version>
+  <version>1.6-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>Indy :: Library :: Model :: Parent</name>
@@ -35,7 +35,7 @@
     <connection>scm:git:https://github.com/CommonJava/indy-event-model</connection>
     <developerConnection>scm:git:https://github.com/CommonJava/indy-event-model</developerConnection>
     <url>http://github.com/Commonjava/indy-event-model</url>
-    <tag>indy-model-parent-1.5</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
@@ -52,17 +52,17 @@
       <dependency>
         <groupId>org.commonjava.indy.service</groupId>
         <artifactId>indy-event-model</artifactId>
-        <version>1.5</version>
+        <version>1.6-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.commonjava.indy.service</groupId>
         <artifactId>indy-event-model-serializer</artifactId>
-        <version>1.5</version>
+        <version>1.6-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.commonjava.indy.service</groupId>
         <artifactId>indy-model-core-java</artifactId>
-        <version>1.5</version>
+        <version>1.6-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
