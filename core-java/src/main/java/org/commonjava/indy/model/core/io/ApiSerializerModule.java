@@ -15,7 +15,7 @@
  */
 package org.commonjava.indy.model.core.io;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 
 import org.commonjava.indy.model.core.StoreKey;
 

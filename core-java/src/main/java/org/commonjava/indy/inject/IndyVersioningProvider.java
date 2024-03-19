@@ -19,9 +19,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import javax.enterprise.inject.Default;
-import javax.enterprise.inject.Produces;
-import javax.inject.Singleton;
+
+import jakarta.enterprise.inject.Default;
+import jakarta.enterprise.inject.Produces;
+import jakarta.inject.Singleton;
 
 import org.commonjava.indy.stats.IndyDeprecatedApis;
 import org.commonjava.indy.stats.IndyVersioning;
