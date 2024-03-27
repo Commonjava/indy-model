@@ -19,8 +19,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.commonjava</groupId>
-    <artifactId>service-parent</artifactId>
-    <version>5-SNAPSHOT</version>
+    <artifactId>commonjava</artifactId>
+    <version>19-SNAPSHOT</version>
   </parent>
   
   <groupId>org.commonjava.indy.service</groupId>
@@ -41,6 +41,7 @@
   <properties>
     <projectEmail>https://github.com/Commonjava/indy-model</projectEmail>
     <atlas-version>1.1.4-SNAPSHOT</atlas-version>
+    <quarkus-kafka-version>3.6.9</quarkus-kafka-version>
     <logback-version>1.2.13</logback-version>
     <jackson-version>2.15.2</jackson-version>
     <maven.compiler.source>11</maven.compiler.source>
@@ -116,6 +117,16 @@
         <version>1.15</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-kafka-client</artifactId>
+        <version>${quarkus-kafka-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.13.0</version>
+      </dependency>
+      <dependency>
         <groupId>jakarta.enterprise</groupId>
         <artifactId>jakarta.enterprise.cdi-api</artifactId>
         <version>4.0.1</version>
@@ -146,9 +157,21 @@
         <version>5.9.1</version>
       </dependency>
       <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.9.1</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-core</artifactId>
         <version>2.2</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.15.1</version>
         <scope>test</scope>
       </dependency>
     </dependencies>
