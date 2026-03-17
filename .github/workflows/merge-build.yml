@@ -19,7 +19,11 @@
 
 name: Merge / Push Build
 
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
+      - '1.x'
 
 jobs:
   publish-snapshot:
