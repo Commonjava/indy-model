@@ -41,7 +41,7 @@
   <properties>
     <projectEmail>https://github.com/Commonjava/indy-model</projectEmail>
     <atlas-version>1.2.1</atlas-version>
-    <quarkus-kafka-version>3.6.9</quarkus-kafka-version>
+    <quarkus-kafka-version>3.34.0</quarkus-kafka-version>
     <logback-version>1.2.13</logback-version>
     <jackson-version>2.21.0</jackson-version>
     <jackson-annotation-version>2.21</jackson-annotation-version>
