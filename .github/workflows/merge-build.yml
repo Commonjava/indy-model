@@ -24,6 +24,11 @@ on:
     branches:
       - 'main'
       - '1.x'
+    paths:
+      - 'addons/**'
+      - 'core-java/**'
+      - 'event/**'
+      - 'pom.xml'
 
 jobs:
   publish-snapshot:
