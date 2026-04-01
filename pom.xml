@@ -40,7 +40,7 @@
 
   <properties>
     <projectEmail>https://github.com/Commonjava/indy-model</projectEmail>
-    <atlas-version>1.2.1</atlas-version>
+    <atlas-version>1.2.2</atlas-version>
     <quarkus-kafka-version>3.6.9</quarkus-kafka-version>
     <logback-version>1.2.13</logback-version>
     <jackson-version>2.21.2</jackson-version>
